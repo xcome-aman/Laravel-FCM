@@ -79,6 +79,7 @@ class Request extends BaseRequest
             'registration_ids' => $this->getRegistrationIds(),
             'notification' => $this->getNotification(),
             'data' => $this->getData(),
+            'direct_boot_ok' => true,
         ];
 
         $message = array_merge($message, $this->getOptions());
